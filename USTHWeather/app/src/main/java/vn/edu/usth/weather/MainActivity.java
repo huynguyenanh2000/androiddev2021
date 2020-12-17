@@ -3,6 +3,7 @@ package vn.edu.usth.weather;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.telecom.Call;
 import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ForecastFragment firstFragment = new ForecastFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
     }
 
     @Override
@@ -45,4 +48,5 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG,"OnDestroy");
     }
+
 }
