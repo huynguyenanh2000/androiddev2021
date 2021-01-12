@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+
+    <string name="Mon" > Thứ Hai </string>
+    <string name="Cloudy12C">12C \n Mây </string>
+    <string name="Paris">Paris </string>
+    <string name="PartyCloud" >Mây một phần \n 24C-31C</string>
+    <string name="Hanoi"> Hà Nội</string>
+</resources>
